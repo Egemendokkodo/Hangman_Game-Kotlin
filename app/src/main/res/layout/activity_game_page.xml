@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePage">
+
+    <TextView
+        android:id="@+id/wrong5"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="156dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrongLetters"
+        app:layout_constraintStart_toEndOf="@+id/wrongLetters"
+        app:layout_constraintTop_toTopOf="@+id/wrongLetters"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/hiddenText"
+        android:layout_width="234dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="268dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/guessLetter"
+        android:layout_width="247dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="please enter a letter"
+        android:inputType="text"
+        android:maxLength="1"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/hiddenText"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="@+id/hiddenText"
+        app:layout_constraintTop_toBottomOf="@+id/hiddenText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Hidden Word:"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/hiddenText"
+        app:layout_constraintEnd_toEndOf="@+id/hiddenText"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/hiddenText" />
+
+    <TextView
+        android:id="@+id/wrongLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Wrong Letters: "
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="408dp"
+        android:layout_height="315dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hangingspot" />
+
+    <TextView
+        android:id="@+id/wrong3"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="80dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrongLetters"
+        app:layout_constraintStart_toEndOf="@+id/wrongLetters"
+        app:layout_constraintTop_toTopOf="@+id/wrongLetters"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/wrong4"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="116dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrongLetters"
+        app:layout_constraintStart_toEndOf="@+id/wrongLetters"
+        app:layout_constraintTop_toTopOf="@+id/wrongLetters"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/wrong2"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrongLetters"
+        app:layout_constraintStart_toEndOf="@+id/wrongLetters"
+        app:layout_constraintTop_toTopOf="@+id/wrongLetters"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="106dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="59dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/head" />
+
+    <ImageView
+        android:id="@+id/body"
+        android:layout_width="107dp"
+        android:layout_height="85dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/head"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/head"
+        app:layout_constraintTop_toBottomOf="@+id/head"
+        app:srcCompat="@drawable/body" />
+
+    <ImageView
+        android:id="@+id/arm2"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="48dp"
+        android:rotationY="360"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/head"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toBottomOf="@+id/head"
+        app:srcCompat="@drawable/arm1" />
+
+    <ImageView
+        android:id="@+id/arm1"
+        android:layout_width="53dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:rotationY="201"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/head"
+        app:layout_constraintTop_toBottomOf="@+id/head"
+        app:srcCompat="@drawable/arm2" />
+
+    <ImageView
+        android:id="@+id/leg1"
+        android:layout_width="51dp"
+        android:layout_height="56dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/leg2"
+        app:layout_constraintTop_toTopOf="@+id/leg2"
+        app:srcCompat="@drawable/legleft" />
+
+    <ImageView
+        android:id="@+id/leg2"
+        android:layout_width="46dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintTop_toBottomOf="@+id/arm2"
+        app:srcCompat="@drawable/legright" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="50dp"
+        android:text="CHECK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guessLetter"
+        app:layout_constraintStart_toStartOf="@+id/guessLetter" />
+
+    <TextView
+        android:id="@+id/wrong1"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrongLetters"
+        app:layout_constraintStart_toEndOf="@+id/wrongLetters"
+        app:layout_constraintTop_toTopOf="@+id/wrongLetters"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/wrong6"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="196dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wrongLetters"
+        app:layout_constraintStart_toEndOf="@+id/wrongLetters"
+        app:layout_constraintTop_toTopOf="@+id/wrongLetters"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
